@@ -1,3 +1,6 @@
+import { nodejsRuntime } from '@/lib/vercelRuntime';
+export const config = nodejsRuntime;
+
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 

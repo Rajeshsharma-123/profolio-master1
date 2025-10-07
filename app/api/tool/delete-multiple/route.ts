@@ -1,3 +1,6 @@
+import { nodejsRuntime } from '@/lib/vercelRuntime';
+export const config = nodejsRuntime;
+
 import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 

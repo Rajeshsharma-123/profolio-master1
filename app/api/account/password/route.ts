@@ -1,3 +1,6 @@
+import { nodejsRuntime } from '@/lib/vercelRuntime';
+export const config = nodejsRuntime;
+
 import bcrypt, { compare } from 'bcryptjs';
 import { NextResponse } from 'next/server';
 
