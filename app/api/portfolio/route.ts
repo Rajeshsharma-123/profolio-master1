@@ -1,5 +1,4 @@
-import { nodejsRuntime } from '@/lib/vercelRuntime';
-export const config = nodejsRuntime;
+export const config = { runtime: 'nodejs' }; 
 
 import { revalidatePath } from 'next/cache';
 import { NextRequest, NextResponse } from 'next/server';
