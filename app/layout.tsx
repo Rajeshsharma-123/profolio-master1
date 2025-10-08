@@ -12,11 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.AUTH_URL
-      ? `${process.env.AUTH_URL}`
-      : process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : `http://localhost:${process.env.PORT || 3000}`
+    process.env.AUTH_URL || `http://localhost:${process.env.PORT || 3000}`
   ),
   title: 'Rajesh — My Digital Canvas',
   description:
