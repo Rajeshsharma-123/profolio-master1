@@ -18,21 +18,20 @@ export function ViewWebsite({ newTab = false }: ViewWebsiteProps) {
     <TooltipProvider disableHoverableContent>
       <Tooltip delayDuration={100}>
         <TooltipTrigger asChild>
-          <Button
-            variant='outline'
-            size='icon'
-            className='h-8 w-8 rounded-full bg-background'
-            asChild
+          <Link
+            href='/'
+            scroll={false}
+            target={`${!newTab ? '_blank' : '_self'}`}
+            rel='noopener noreferer'
           >
-            <Link
-              href='/'
-              scroll={false}
-              target={`${!newTab ? '_blank' : '_self'}`}
-              rel='noopener noreferer'
+            <Button
+              variant='outline'
+              size='icon'
+              className='h-8 w-8 rounded-full bg-background'
             >
               <PanelTop className='w-5 h-5' />
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </TooltipTrigger>
         <TooltipContent side='bottom'>View Website</TooltipContent>
       </Tooltip>

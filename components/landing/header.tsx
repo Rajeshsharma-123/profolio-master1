@@ -54,11 +54,11 @@ export default function Header({ miscellaneous }: HeaderProps) {
               <DownloadCvButton />
             </m.div>
             <m.div variants={slideInFromRight(0.5)}>
-              <Button variant='default' asChild>
-                <Link href='#contact' title="Let's Talk">
+              <Link href='#contact' title="Let's Talk">
+                <Button variant='default'>
                   <MessageCircle className='mr-2 w-5 h-5' /> Let&apos;s Talk
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </m.div>
           </div>
           <div className='flex justify-between items-end'>

@@ -57,20 +57,19 @@ export default function Contact({ miscellaneous }: ContactProps) {
                 <h4 className='text-sm text-muted/60 group-hover:text-primary/80 pb-1'>
                   {miscellaneous?.email}
                 </h4>
-                <Button
-                  variant='link'
-                  className='text-primary-foreground group-hover:text-primary'
-                  asChild
+                <Link
+                  href={`${
+                    miscellaneous ? 'mailto:' + miscellaneous.email : '#'
+                  }`}
+                  title='Email me'
                 >
-                  <Link
-                    href={`${
-                      miscellaneous ? 'mailto:' + miscellaneous.email : '#'
-                    }`}
-                    title='Email me'
+                  <Button
+                    variant='link'
+                    className='text-primary-foreground group-hover:text-primary'
                   >
                     Email me
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               </div>
             </m.article>
             <m.article
@@ -83,20 +82,19 @@ export default function Contact({ miscellaneous }: ContactProps) {
                 <h4 className='text-sm text-muted/60 group-hover:text-primary/80 pb-1'>
                   {miscellaneous?.messengerName}
                 </h4>
-                <Button
-                  variant='link'
-                  className='text-primary-foreground group-hover:text-primary'
-                  asChild
+                <Link
+                  href={`${miscellaneous ? miscellaneous.messengerUrl : '#'}`}
+                  target='_blank'
+                  rel='noopener noreferer'
+                  title='Say hello'
                 >
-                  <Link
-                    href={`${miscellaneous ? miscellaneous.messengerUrl : '#'}`}
-                    target='_blank'
-                    rel='noopener noreferer'
-                    title='Say hello'
+                  <Button
+                    variant='link'
+                    className='text-primary-foreground group-hover:text-primary'
                   >
                     Say hello
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               </div>
             </m.article>
             <m.article
@@ -109,20 +107,19 @@ export default function Contact({ miscellaneous }: ContactProps) {
                 <h4 className='text-sm text-muted/60 group-hover:text-primary/80 pb-1'>
                   {miscellaneous?.discordUsername}
                 </h4>
-                <Button
-                  variant='link'
-                  className='text-primary-foreground group-hover:text-primary'
-                  asChild
+                <Link
+                  href={`${miscellaneous ? miscellaneous.discordUrl : '#'}`}
+                  target='_blank'
+                  rel='noopener noreferer'
+                  title="Let's chat"
                 >
-                  <Link
-                    href={`${miscellaneous ? miscellaneous.discordUrl : '#'}`}
-                    target='_blank'
-                    rel='noopener noreferer'
-                    title="Let's chat"
+                  <Button
+                    variant='link'
+                    className='text-primary-foreground group-hover:text-primary'
                   >
                     Let&apos;s chat
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               </div>
             </m.article>
           </div>

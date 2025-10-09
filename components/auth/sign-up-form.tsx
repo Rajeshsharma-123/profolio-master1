@@ -48,7 +48,7 @@ export default function SignUpForm() {
       setLoading(true);
 
       const response = await axios.post('/api/register', values);
-      console.log("The response is :",response)
+      console.log('The response is :', response);
 
       if (response.data.success) {
         form.reset();
@@ -204,11 +204,11 @@ export default function SignUpForm() {
             </Button>
             <p className='text-sm font-light text-gray-500 dark:text-gray-400 mt-1'>
               Already have an account?
-              <Button variant='link' className='ml-1 px-0' asChild>
-                <Link href='/auth/sign-in' title='Sign in'>
+              <Link href='/auth/sign-in' title='Sign in'>
+                <Button variant='link' className='ml-1 px-0'>
                   Sign in
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </p>
           </form>
         </Form>

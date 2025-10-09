@@ -32,180 +32,147 @@ export default function Footer({ miscellaneous }: FooterProps) {
             variants={slideInFromLeft(0.2)}
             className='flex justify-center'
           >
-            <Button
-              variant='link'
-              className='text-primary-foreground text-4xl font-medium uppercase'
-              asChild
-            >
-              <Link href='/#home' title='Rajesh'>
+            <Link href='/#home' title='Rajesh'>
+              <Button
+                variant='link'
+                className='text-primary-foreground text-4xl font-medium uppercase'
+              >
                 Rajesh
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </m.div>
           <m.ul
             variants={slideInFromRight(0.3)}
             className='w-full max-w-3xl mx-auto flex flex-col items-center md:flex-row justify-between mt-8'
           >
             <li>
-              <Button
-                variant='ghost'
-                className='text-primary-foreground'
-                asChild
-              >
-                <Link href='/#home' title='Home'>
+              <Link href='/#home' title='Home'>
+                <Button variant='ghost' className='text-primary-foreground'>
                   Home
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </li>
             <li>
-              <Button
-                variant='ghost'
-                className='text-primary-foreground'
-                asChild
-              >
-                <Link href='/#about' title='About'>
+              <Link href='/#about' title='About'>
+                <Button variant='ghost' className='text-primary-foreground'>
                   About
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </li>
             <li>
-              <Button
-                variant='ghost'
-                className='text-primary-foreground'
-                asChild
-              >
-                <Link href='/#experience' title='Experience'>
+              <Link href='/#experience' title='Experience'>
+                <Button variant='ghost' className='text-primary-foreground'>
                   Experience
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </li>
             <li>
-              <Button
-                variant='ghost'
-                className='text-primary-foreground'
-                asChild
-              >
-                <Link href='/#expertise' title='Expertise'>
+              <Link href='/#expertise' title='Expertise'>
+                <Button variant='ghost' className='text-primary-foreground'>
                   Expertise
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </li>
             <li>
-              <Button
-                variant='ghost'
-                className='text-primary-foreground'
-                asChild
-              >
-                <Link href='/#qualification' title='Qualification'>
+              <Link href='/#qualification' title='Qualification'>
+                <Button variant='ghost' className='text-primary-foreground'>
                   Qualification
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </li>
             <li>
-              <Button
-                variant='ghost'
-                className='text-primary-foreground'
-                asChild
-              >
-                <Link href='/#portfolio' title='Portfolio'>
+              <Link href='/#portfolio' title='Portfolio'>
+                <Button variant='ghost' className='text-primary-foreground'>
                   Portfolio
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </li>
             <li>
-              <Button
-                variant='ghost'
-                className='text-primary-foreground'
-                asChild
-              >
-                <Link href='/#tool' title='Tool'>
+              <Link href='/#tool' title='Tool'>
+                <Button variant='ghost' className='text-primary-foreground'>
                   Tool
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </li>
             <li>
-              <Button
-                variant='ghost'
-                className='text-primary-foreground'
-                asChild
-              >
-                <Link href='/#contact' title='Contact'>
+              <Link href='/#contact' title='Contact'>
+                <Button variant='ghost' className='text-primary-foreground'>
                   Contact
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </li>
           </m.ul>
           <m.div
             variants={slideInFromLeft(0.4)}
             className='flex justify-center gap-4 mt-8'
           >
-            <Button variant='secondary' size='icon' asChild>
-              <Link
-                href={`${miscellaneous ? miscellaneous.facebookUrl : '#'}`}
-                aria-label='Facebook'
-                target='_blank'
-                title='Facebook'
-                rel='noopener noreferrer'
-              >
+            <Link
+              href={`${miscellaneous ? miscellaneous.facebookUrl : '#'}`}
+              aria-label='Facebook'
+              target='_blank'
+              title='Facebook'
+              rel='noopener noreferrer'
+            >
+              <Button variant='secondary' size='icon'>
                 <Facebook className='w-5 h-5' />
-              </Link>
-            </Button>
-            <Button variant='secondary' size='icon' asChild>
-              <Link
-                href={`${miscellaneous ? miscellaneous.instagramUrl : '#'}`}
-                aria-label='Instagram'
-                target='_blank'
-                title='Instagram'
-                rel='noopener noreferrer'
-              >
+              </Button>
+            </Link>
+            <Link
+              href={`${miscellaneous ? miscellaneous.instagramUrl : '#'}`}
+              aria-label='Instagram'
+              target='_blank'
+              title='Instagram'
+              rel='noopener noreferrer'
+            >
+              <Button variant='secondary' size='icon'>
                 <Instagram className='w-5 h-5' />
-              </Link>
-            </Button>
-            <Button variant='secondary' size='icon' asChild>
-              <Link
-                href={`${miscellaneous ? miscellaneous.twitterUrl : '#'}`}
-                aria-label='Twitter'
-                target='_blank'
-                title='Twitter'
-                rel='noopener noreferrer'
-              >
+              </Button>
+            </Link>
+            <Link
+              href={`${miscellaneous ? miscellaneous.twitterUrl : '#'}`}
+              aria-label='Twitter'
+              target='_blank'
+              title='Twitter'
+              rel='noopener noreferrer'
+            >
+              <Button variant='secondary' size='icon'>
                 <Twitter className='w-5 h-5' />
-              </Link>
-            </Button>
-            <Button variant='secondary' size='icon' asChild>
-              <Link
-                href={`${miscellaneous ? miscellaneous.linkedinUrl : '#'}`}
-                aria-label='LinkedIn'
-                target='_blank'
-                title='LinkedIn'
-                rel='noopener noreferrer'
-              >
+              </Button>
+            </Link>
+            <Link
+              href={`${miscellaneous ? miscellaneous.linkedinUrl : '#'}`}
+              aria-label='LinkedIn'
+              target='_blank'
+              title='LinkedIn'
+              rel='noopener noreferrer'
+            >
+              <Button variant='secondary' size='icon'>
                 <Linkedin className='w-5 h-5' />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </m.div>
           <m.div
             variants={slideInFromRight(0.5)}
             className='flex flex-col md:flex-row justify-center items-center mt-9 gap-4'
           >
-            <Button variant='outline' className='h-6 w-[146px]' asChild>
-              <Link
-                href='/privacy-policy'
-                className='text-primary-foreground text-xs'
-                title='Privacy Policy'
-              >
+            <Link
+              href='/privacy-policy'
+              className='text-primary-foreground text-xs'
+              title='Privacy Policy'
+            >
+              <Button variant='outline' className='h-6 w-[146px]'>
                 Privacy Policy
-              </Link>
-            </Button>
-            <Button variant='outline' className='h-6 w-[146px]' asChild>
-              <Link
-                href='/terms-and-conditions'
-                className='text-primary-foreground text-xs'
-                title='Terms & Conditions'
-              >
+              </Button>
+            </Link>
+            <Link
+              href='/terms-and-conditions'
+              className='text-primary-foreground text-xs'
+              title='Terms & Conditions'
+            >
+              <Button variant='outline' className='h-6 w-[146px]'>
                 Terms & Conditions
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </m.div>
           <m.div
             variants={slideInFromLeft(0.6)}
@@ -213,20 +180,16 @@ export default function Footer({ miscellaneous }: FooterProps) {
           >
             <small className='text-muted'>
               Created by
-              <Button
-                variant='link'
-                className='text-muted text-xs px-1'
-                asChild
+              <Link
+                href='https://www.linkedin.com/in/rajesh-vishwakarma-0b7a7630b/'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='LinkedIn'
               >
-                <Link
-                  href='https://www.linkedin.com/in/rajesh-vishwakarma-0b7a7630b/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='LinkedIn'
-                >
+                <Button variant='link' className='text-muted text-xs px-1'>
                   Rajesh
-                </Link>
-              </Button>
+                </Button>
+              </Link>
               &copy; {new Date().getFullYear()}.
             </small>
           </m.div>

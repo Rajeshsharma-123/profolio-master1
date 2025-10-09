@@ -40,12 +40,12 @@ export default function PrivacyPolicyPage() {
         <ModeToggle />
       </div>
       <main className='container max-w-6xl px-4 md:px-8 mx-auto -mt-5 xl:mt-5 relative overflow-x-hidden'>
-        <Button variant='outline' size='sm' asChild>
-          <Link href='/' className='flex items-center space-x-2' title='Home'>
+        <Link href='/' className='flex items-center space-x-2' title='Home'>
+          <Button variant='outline' size='sm'>
             <ChevronLeft className='w-4 h-4' />
             Home
-          </Link>
-        </Button>
+          </Button>
+        </Link>
         <h1 className='font-bold text-4xl mb-6 pt-4'>Privacy Policy</h1>
         <p className='mb-4 text-base'>Last updated: February 05, 2024</p>
         <p className='mb-4 text-base'>

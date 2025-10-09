@@ -103,11 +103,9 @@ export default function About({ about }: AboutProps) {
               {about?.summary}
             </m.p>
             <m.div variants={slideInFromRight(0.5)}>
-              <Button variant='default' asChild>
-                <Link href='#contact' title="Let's Talk">
-                  Let&apos;s Talk
-                </Link>
-              </Button>
+              <Link href='#contact' title="Let's Talk">
+                <Button variant='default'>Let&apos;s Talk</Button>
+              </Link>
             </m.div>
           </div>
         </div>

@@ -89,20 +89,19 @@ export default function PortfolioCard({
               GitHub
             </Link>
           </Button>
-          <Button
-            variant='secondary'
-            className='group-hover:bg-primary hover:opacity-90 transition-opacity duration-100 ease-in-out group-hover:text-primary-foreground'
-            asChild
+          <Link
+            href={portfolio.demoUrl}
+            target='_blank'
+            title='Live Demo'
+            rel='noopener noreferrer'
           >
-            <Link
-              href={portfolio.demoUrl}
-              target='_blank'
-              title='Live Demo'
-              rel='noopener noreferrer'
+            <Button
+              variant='secondary'
+              className='group-hover:bg-primary hover:opacity-90 transition-opacity duration-100 ease-in-out group-hover:text-primary-foreground'
             >
               Live Demo
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </div>
       </div>
     </m.article>

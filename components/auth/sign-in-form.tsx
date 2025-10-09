@@ -136,11 +136,11 @@ export default function SignInForm() {
               </Button>
               <p className='text-sm font-light text-gray-500 dark:text-gray-400 mt-1'>
                 Don&apos;t have an account yet?
-                <Button variant='link' className='ml-1 px-0' asChild>
-                  <Link href='/auth/sign-up' title='Sign up'>
+                <Link href='/auth/sign-up' title='Sign up'>
+                  <Button variant='link' className='ml-1 px-0'>
                     Sign up
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               </p>
             </form>
           </Form>
