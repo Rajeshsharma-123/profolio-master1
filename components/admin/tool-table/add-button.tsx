@@ -7,11 +7,11 @@ import { Button } from '@/components/ui/button';
 
 export default function AddButton() {
   return (
-    <Button size='sm' className='h-8' asChild>
-      <Link href='/tool/create'>
+    <Link href='/tool/create'>
+      <Button size='sm' className='h-8'>
         <PlusCircle size={16} className='mr-2' />
         Add
-      </Link>
-    </Button>
+      </Button>
+    </Link>
   );
 }

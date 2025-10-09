@@ -46,9 +46,9 @@ export default function RecentProject({ projects }: RecentProjectProps) {
             </div>
           </div>
           <div>
-            <Button size='sm' asChild>
-              <Link href={`/portfolio/${project.id}/edit`}>View</Link>
-            </Button>
+            <Link href={`/portfolio/${project.id}/edit`}>
+              <Button size='sm'>View</Button>
+            </Link>
           </div>
         </div>
       ))}

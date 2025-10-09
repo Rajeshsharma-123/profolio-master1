@@ -98,12 +98,12 @@ export function CellActions<TData>({ row }: CellActionsProps<TData>) {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align='end'>
-          <DropdownMenuItem className='hover:cursor-pointer' asChild>
-            <Link href={`/tool/${tool.id}/edit`}>
+          <Link href={`/tool/${tool.id}/edit`}>
+            <DropdownMenuItem className='hover:cursor-pointer'>
               <Edit className='mr-2' size={14} />
               Edit
-            </Link>
-          </DropdownMenuItem>
+            </DropdownMenuItem>
+          </Link>
 
           <DropdownMenuSeparator />
           <DropdownMenuItem
