@@ -57,12 +57,11 @@ export function Menu({ isOpen }: MenuProps) {
                       <TooltipProvider disableHoverableContent>
                         <Tooltip delayDuration={100}>
                           <TooltipTrigger asChild>
-                            <Button
-                              variant={active ? 'secondary' : 'ghost'}
-                              className='w-full justify-start h-10 mb-1'
-                              asChild
-                            >
-                              <Link href={href}>
+                            <Link href={href}>
+                              <Button
+                                variant={active ? 'secondary' : 'ghost'}
+                                className='w-full justify-start h-10 mb-1'
+                              >
                                 <span
                                   className={cn(isOpen === false ? '' : 'mr-4')}
                                 >
@@ -78,8 +77,8 @@ export function Menu({ isOpen }: MenuProps) {
                                 >
                                   {label}
                                 </p>
-                              </Link>
-                            </Button>
+                              </Button>
+                            </Link>
                           </TooltipTrigger>
                           {isOpen === false && (
                             <TooltipContent side='right'>

@@ -133,14 +133,11 @@ export default async function DashboardPage() {
           <CardHeader className='relative mx-[1px]'>
             <CardTitle className='text-xl font-bold items-center flex justify-between'>
               Qualification
-              <Button
-                variant='link'
-                size='default'
-                className='h-5 px-0'
-                asChild
-              >
-                <Link href='/qualification'>View all</Link>
-              </Button>
+              <Link href='/qualification'>
+                <Button variant='link' size='default' className='h-5 px-0'>
+                  View all
+                </Button>
+              </Link>
             </CardTitle>
             <CardDescription>
               My personal journey on education & working experience
@@ -154,14 +151,11 @@ export default async function DashboardPage() {
           <CardHeader className='relative mx-[1px]'>
             <CardTitle className='text-xl font-bold items-center flex justify-between'>
               Recent Projects
-              <Button
-                variant='link'
-                size='default'
-                className='h-5 px-0'
-                asChild
-              >
-                <Link href='/portfolio'>View all</Link>
-              </Button>
+              <Link href='/portfolio'>
+                <Button variant='link' size='default' className='h-5 px-0'>
+                  View all
+                </Button>
+              </Link>
             </CardTitle>
             <CardDescription>
               My latest 5 completed projects list

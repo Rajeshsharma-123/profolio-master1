@@ -22,15 +22,14 @@ export function Sidebar() {
     >
       <SidebarToggle isOpen={sidebar?.isOpen} setIsOpen={sidebar?.setIsOpen} />
       <div className='relative h-full flex flex-col px-3 py-4 overflow-y-auto shadow-md dark:shadow-zinc-800'>
-        <Button
-          className={cn(
-            'transition-transform ease-in-out duration-300 mb-1',
-            sidebar?.isOpen === false ? 'translate-x-1' : 'translate-x-0'
-          )}
-          variant='link'
-          asChild
-        >
-          <Link href='/dashboard' className='flex items-center gap-2'>
+        <Link href='/dashboard' className='flex items-center gap-2'>
+          <Button
+            className={cn(
+              'transition-transform ease-in-out duration-300 mb-1',
+              sidebar?.isOpen === false ? 'translate-x-1' : 'translate-x-0'
+            )}
+            variant='link'
+          >
             <LayoutTemplate />
             <h1
               className={cn(
@@ -42,8 +41,8 @@ export function Sidebar() {
             >
               Profolio
             </h1>
-          </Link>
-        </Button>
+          </Button>
+        </Link>
         <Menu isOpen={sidebar?.isOpen} />
       </div>
     </aside>
