@@ -97,9 +97,9 @@ export default async function DashboardPage() {
           Welcome {user.name}
         </h2>
         <div className='flex items-center'>
-          <Button size='sm' asChild>
-            <Link href='/portfolio/create'>Add project</Link>
-          </Button>
+          <Link href='/portfolio/create'>
+            <Button size='sm'>Add project</Button>
+          </Link>
         </div>
       </div>
       <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-4'>
