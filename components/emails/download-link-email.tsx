@@ -29,13 +29,13 @@ export default function DownloadLinkEmail({
         <title>CV Download Link</title>
       </Head>
       <Preview>
-        You requested a CV download link from Salimi. Check it out.
+        You requested a CV download link from Rajesh. Check it out.
       </Preview>
       <Tailwind>
         <Body className='bg-white my-auto mx-auto font-sans'>
           <Container className='border border-solid border-zinc-200 rounded-lg my-10 mx-auto p-5 max-w-[500px]'>
             <Heading as='h1' className='text-black font-bold text-xl mb-6'>
-              Salimi&apos;s CV Download Link
+              Rajesh&apos;s CV Download Link
             </Heading>
             <Text className='text-black text-sm'>
               <p className='text-base font-semibold'>Hi {name},</p>
@@ -58,7 +58,7 @@ export default function DownloadLinkEmail({
                 href={baseUrl}
                 className='underline text-gray-500 underline-offset-2'
               >
-                Salimi
+                Rajesh
               </Link>
               &apos;s website.
             </Text>

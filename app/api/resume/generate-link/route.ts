@@ -42,11 +42,11 @@ export async function POST(req: Request) {
         }
       });
     }
-
+    console.log("the email is ", email)
     const downloadToken = await generateDownloadToken(email);
 
     const data = await resend.emails.send({
-      from: 'Rajesh <no-reply@Rajesh.my>',
+      from: 'onboarding@resend.dev',
       to: [email],
       subject: 'CV Download Link',
       react: DownloadLinkEmail({ name, downloadToken: downloadToken.token })

@@ -41,7 +41,7 @@ export async function POST(req: Request) {
 
     const data = await resend.emails.send({
       from: 'My Website <onboarding@resend.dev>',
-      to: ['raj9807464548@gmail.com'],
+      to: ['079bct060@ioepc.edu.np'],
       reply_to: email,
       subject: subject,
       react: ContactEmail({ email, name, message })

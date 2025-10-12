@@ -35,7 +35,7 @@ export default function ContactEmail({
               New Message from Contact Form
             </Heading>
             <Text className='text-black text-sm'>
-              <p className='text-base font-semibold'>Hi Salimi,</p>
+              <p className='text-base font-semibold'>Hi Rajesh,</p>
             </Text>
             <Text className='text-black text-sm'>
               You got a new message from {name}. Check it below:
