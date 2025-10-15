@@ -32,7 +32,7 @@ export default function DownloadCvButton() {
 
       {/* New direct download button matching Button component style */}
       <a
-        href='/resume.pdf' // Place your CV file in the public folder
+        href='/Resume.pdf' // Place your CV file in the public folder
         download
         className='inline-block px-6 py-2 rounded-lg font-semibold text-sm
                    bg-gray-900 text-white border border-gray-900
