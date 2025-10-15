@@ -15,6 +15,8 @@ export default function DownloadCvButton() {
 
   return (
     <>
+      {/* Original download button that opens email form */}
+      {/*
       <Button variant='outline' onClick={() => setOpen(true)}>
         Download CV
       </Button>
@@ -26,6 +28,21 @@ export default function DownloadCvButton() {
       >
         <DownloadCvForm onClose={() => setOpen(false)} />
       </Modal>
+      */}
+
+      {/* New direct download button matching Button component style */}
+      <a
+        href='/resume.pdf' // Place your CV file in the public folder
+        download
+        className='inline-block px-6 py-2 rounded-lg font-semibold text-sm
+                   bg-gray-900 text-white border border-gray-900
+                   hover:bg-white hover:text-gray-900
+                   dark:bg-gray-100 dark:text-gray-900 dark:border-gray-100
+                   dark:hover:bg-gray-900 dark:hover:text-white
+                   transition-colors duration-200 ease-in-out'
+      >
+        Download CV
+      </a>
     </>
   );
 }
