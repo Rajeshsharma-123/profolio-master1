@@ -39,7 +39,7 @@ export default function Header({ miscellaneous }: HeaderProps) {
           <div className='flex flex-col justify-start items-center'>
             <Link href='/' scroll={false} title='Home'>
               <h1 className='text-3xl xs:text-4xl sm:text-[2.5rem] font-medium leading-7 py-4'>
-                Rajesh Sharma
+                Rajesh
               </h1>
             </Link>
           </div>
